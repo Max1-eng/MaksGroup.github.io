@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="az" ng-app="aszApp" class="ng-scope"><head>
+        <meta charset="utf-8">
+        
+        
+        <title ng-bind="pageTitle" class="ng-binding">MAX MARKET.az</title>
+      
+</style>
+<style>
+
+ul {
+  list-style: none;/*убираем маркеры списка*/
+  margin: 0;/*убираем отступы*/
+  padding-left: 0;/*убираем отступы*/
+  margin-top:25px;/*делаем отступ сверху*/
+  background:#F44;/*добавляем фон всему меню*/
+  height: 50px;/*задаем высоту*/
+  display:inline-block;
+}
+a {
+  text-decoration: none;/*убираем подчеркивание текста ссылок*/
+  background:#FF4444;/*добавляем фон к пункту меню*/***
+  color:#F0F3F4 ;/*меняем цвет ссылок*/
+  padding:0px 15px;/*добавляем отступ*/
+  font-family: arial;/*меняем шрифт*/
+  line-height:50px;/*ровняем меню по вертикали*/
+  display: block; 
+  border-right: 1px solid #F36262;/*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease;/*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+
+}
+a:hover {
+  background:#D43737;/*добавляем эффект при наведении*/
+}
+li {
+  float:left;/*Размещаем список горизонтально для реализации меню*/
+  position:relative;
+ 
+}
+
+/*Стили для скрытого выпадающего меню*/
+    li > ul {
+        position:absolute;
+        top:25px;
+        display:none;
+		
+    }
+     
+    /*Делаем скрытую часть видимой*/
+    li:hover > ul {
+        display:block; 
+        width:180px;/*Задаем ширину выпадающего меню*/
+		
+    }
+   li:hover > ul > li {
+        float:none;/*Убираем горизонтальное позиционирование*/
+		
+    }
+   .icons{
+   	display:flex;
+      flex-direction:row-reverse;
+    }
+    .icons img{
+      height:100px;
+      width: 100px;
+     }
+	.top-text{
+	color:blue;
+	margin-top:-10px;
+	display:flex;
+	flex-direction:column;
+	width:100px;
+	}
+	.dropdown{ 
+	color:#28B463;
+	}
+	.form{
+	margin-left:1000px;
+	border:2px orange;
+	padding:30px;
+	border-radius:40px;
+	background-color: orange;
+	color:orange;
+	}
+	.registration{
+	border:2px solid  ;
+	border-radius:40px;
+	 width:80px;
+	 padding:-70px;
+	 color: orange;
+	}
+	li{
+	width:200px;
+	}
+	.year{
+	border:2px solid;
+	border-radius:40px;
+	color: orange;
+	}
+	.end{
+
+	margin-top:-400px;
+	margin-left:170px;
+	}
+	.repost{
+	margin-left:-100px;
+	}
+	.orange{
+	background-color:orange; 
+	color:orange;
+	}
+	
+	.image1 img{
+	border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: -285px;
+	margin-left: 250px;
+	position:absolute;
+	}
+	.image2 img{
+border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: -650px;
+	margin-left: 250px;
+position:absolute;
+	}
+	.image4 img{
+		border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: -650px;
+	margin-left: 750px;
+	position:absolute;
+	}
+	.image5 img{
+border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: -450px;
+	margin-left: 750px;
+	}
+	.image3 img{
+border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: -475px;
+	margin-left: 500px;
+	position:absolute;
+	}
+	
+	.image5 img{
+border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: -450px;
+	margin-left: 750px;
+	}
+
+	.image11 img{
+	border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: 350px;
+	margin-left: 250px;
+	position:absolute;
+	}
+	.image22 img{
+border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: 25px;
+	margin-left: 250px;
+position:absolute;
+	}
+	.image44 img{
+		border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: 25px;
+	margin-left: 750px;
+	position:absolute;
+	}
+	.image55 img{
+border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: 350px;
+	margin-left: 750px;
+	position: absolute;
+	}
+	.image33 img{
+border-radius:100px;
+	width: 300px; 
+	height: 300px;
+	margin-top: 200px;
+	margin-left: 500px;
+	position:absolute;
+	}
+</style>
+</head>
+    <body style="background-color:orange">
+	<span id="doc_time">
+ Дата и время
+</span>
+        <h1 class="form">.</h1>
+<div class="orange">
+    <form  class="form" method="post">
+      <label for="login-field">.</label>
+      <br>
+      <br>
+      <label for="password-field">.</label>
+	  <p><i>.</i></p>
+      <select name="year" class="year" >
+</div>
+	   
+	   </select>
+
+	<a class="registration" style="background-color:orange">.</a>
+    </form>
+        <header>
+<nav class="navbar navbar-inverse" role="navigation">
+			<table class="table1">
+           <div class="end" >
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="Haqqimizda.html" class="dropdown-toggle" data-toggle="dropdown">HAQQIMIZDA</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Haqqimizda.html">Ümumi</a></li>
+                        
+                    </ul>
+                </li>
+					<li>
+                    <a href="https://maps.app.goo.gl/G7FZhUZ6hKJpkmVE9">MAĞAZAMIZ</a>
+					<ul>
+					<li>
+					<a href="https://maps.app.goo.gl/G7FZhUZ6hKJpkmVE9">TER TER<a>
+					</li>
+					</ul>
+                <li>
+                    <a href="alaqa.html">ƏLAQƏ</a>
+                    <ul>
+                     <li>
+							<a href="https://www.instagram.com/maks_market/">INSTAGRAM</a></li>
+					<li><a href="#">+9945********</a></li>
+                    </ul>
+                </li>
+					<li>
+                    <a href="">XÜSUSİ TƏKLİFLƏR</a>
+					<ul>
+					<li>
+                        <a href="">XÜSUSİ QİYMƏTLƏR</a>
+                    
+					</li>
+                   </ul>
+                    <ul>
+                        <li><a href="#">Tədbirlər</a></li>
+                    </ul>
+                </li>
+            </ul>
+			</div>
+			</table>
+	    <div class="top-text">
+            <p style="font-size:40pt" class="hidden">M<br>A<br>K<br>S<br><br> M<br>A<br>R<br>K<br>E<br>T<br><br></p>
+        </div>
+        
+		   <div class="image1"><img src="3eadf773-c295-46a5-91a7-d7df08cd0340.jpg"></div>
+		   <div class="image2"><img src="3eadf773-c295-46a5-91a7-d7df08cd0341.jpg"></div>
+		   <div class="image4"><img src="3eadf773-c295-46a5-91a7-d7df08cd0349.jpg"></div>
+		   <div class="image5"><img src="3eadf773-c295-46a5-91a7-d7df08cd0344.jpg"></div>
+		   <div class="image3"><img src="3eadf773-c295-46a5-91a7-d7df08cd0345.jpg"></div>
+		<div class="image11"><img src="3eadf773-c295-46a5-91a7-d7df08cd0340.jpg"></div>
+		<div class="image22"><img src="3eadf773-c295-46a5-91a7-d7df08cd0343.jpg"></div>
+		<div class="image44"><img src="3eadf773-c295-46a5-91a7-d7df08cd0349.jpg"></div>
+		<div class="image55"><img src="3eadf773-c295-46a5-91a7-d7df08cd0344.jpg"></div>
+		<div class="image33"><img src="3eadf773-c295-46a5-91a7-d7df08cd0345.jpg"></div>
+      <script src="Market.js"></script>
+      </body></html>
