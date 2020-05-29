@@ -1,4 +1,4 @@
-alert("Sizi Maks Marketin saytinda ,Salamlayirig!")
+alert("Sizi Maks Marketin saytinda ,Salamlayiriq!")
 
 clock();
 function clock() {
